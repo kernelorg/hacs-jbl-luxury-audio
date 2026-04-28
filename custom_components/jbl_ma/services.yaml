@@ -1,0 +1,44 @@
+send_ir:
+  name: Send IR command
+  description: Simulate a remote-control IR command on the AVR.
+  fields:
+    device_id:
+      name: Device
+      description: The JBL MA AVR device to send the command to.
+      required: true
+      selector:
+        device:
+          integration: jbl_ma
+    code:
+      name: Code
+      description: A named IR action (e.g. "power", "vol_up", "main_zone_hdmi1") or a 24-bit NEC code (e.g. 0x010E03).
+      required: true
+      example: power
+      selector:
+        text:
+
+send_raw:
+  name: Send raw command
+  description: Advanced — send any command id with data bytes. Use only if you know the protocol.
+  fields:
+    device_id:
+      name: Device
+      description: The JBL MA AVR device to send to.
+      required: true
+      selector:
+        device:
+          integration: jbl_ma
+    command_id:
+      name: Command ID
+      description: 8-bit command id, e.g. 0x06 for master volume.
+      required: true
+      example: "0x06"
+      selector:
+        text:
+    data:
+      name: Data bytes
+      description: List of data bytes (0-255) for the command's payload.
+      required: false
+      example: "[0x28]"
+      selector:
+        object:

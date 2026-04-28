@@ -1,0 +1,49 @@
+{
+  "config": {
+    "flow_title": "{name} ({host})",
+    "step": {
+      "user": {
+        "title": "JBL MA Series AVR",
+        "description": "Enter the IP address of your AVR. IP control must be enabled (the AVR must not be in Green standby mode).",
+        "data": {
+          "host": "Host or IP address",
+          "port": "TCP port"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "JBL MA Series AVR discovered",
+        "description": "Discovered {name} at {host}. Add it to Home Assistant?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the AVR.",
+      "timeout": "Timed out waiting for the AVR to respond.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This AVR is already configured.",
+      "cannot_connect": "Could not reach the AVR's IP control port.",
+      "not_jbl_ma": "Discovered device doesn't look like a JBL MA series AVR.",
+      "unknown": "Unexpected error."
+    }
+  },
+  "services": {
+    "send_ir": {
+      "name": "Send IR command",
+      "description": "Simulate a remote-control IR command on the AVR.",
+      "fields": {
+        "device_id": {"name": "Device", "description": "The JBL MA AVR device."},
+        "code": {"name": "Code", "description": "Named IR action or 24-bit NEC code."}
+      }
+    },
+    "send_raw": {
+      "name": "Send raw command",
+      "description": "Send any command id with data bytes.",
+      "fields": {
+        "device_id": {"name": "Device", "description": "The JBL MA AVR device."},
+        "command_id": {"name": "Command ID", "description": "8-bit command id."},
+        "data": {"name": "Data bytes", "description": "List of data bytes."}
+      }
+    }
+  }
+}
