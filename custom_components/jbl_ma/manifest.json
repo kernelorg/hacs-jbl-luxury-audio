@@ -6,18 +6,18 @@
   "iot_class": "local_push",
   "documentation": "https://github.com/kernelorg/hacs-jbl-luxury-audio",
   "issue_tracker": "https://github.com/kernelorg/hacs-jbl-luxury-audio/issues",
-  "codeowners": ["karpenich@gmail.com"],
+  "codeowners": ["@kernelorg"],
   "dependencies": ["zeroconf"],
   "requirements": [],
   "zeroconf": [
-    { "type": "_airplay._tcp.local.", "properties": { "model": "JBL MA*" } },
-    { "type": "_airplay._tcp.local.", "properties": { "manufacturer": "Harman Luxury Audio*" } },
-    { "type": "_raop._tcp.local.", "properties": { "am": "JBL MA*" } },
+    { "type": "_airplay._tcp.local.", "properties": { "model": "jbl ma*" } },
+    { "type": "_airplay._tcp.local.", "properties": { "manufacturer": "harman luxury audio*" } },
+    { "type": "_raop._tcp.local.", "properties": { "am": "jbl ma*" } },
     { "type": "_googlecast._tcp.local.", "name": "jbl-ma*" },
-    { "type": "_googlecast._tcp.local.", "properties": { "md": "JBL MA*" } },
+    { "type": "_googlecast._tcp.local.", "properties": { "md": "jbl ma*" } },
     { "type": "_tidalconnect._tcp.local.", "name": "jbl ma*" },
-    { "type": "_tidalconnect._tcp.local.", "properties": { "mn": "JBL MA*" } },
-    { "type": "_sues800device._tcp.local.", "properties": { "manufacturer": "Harman Luxury Audio*" } },
+    { "type": "_tidalconnect._tcp.local.", "properties": { "mn": "jbl ma*" } },
+    { "type": "_sues800device._tcp.local.", "properties": { "manufacturer": "harman luxury audio*" } },
     { "type": "_sues800device._tcp.local.", "properties": { "model": "jbl_ma*" } }
   ]
 }
