@@ -40,7 +40,7 @@ HDMI 5/6, party mode, DRC, or Dirac Live.
 ## Installation
 
 ### HACS (custom repository)
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=kernelorg&repository=hacs-jbl-premuim-audio&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=kernelorg&repository=hacs-jbl-premium-audio&category=integration)
 
 1. HACS → Integrations → ⋮ → **Custom repositories**
 2. Add this repository, category **Integration**
