@@ -46,7 +46,6 @@ NAV_SPECS: tuple[JBLButtonSpec, ...] = (
     JBLButtonSpec("nav_ok",    "OK",    "mdi:circle-slice-8",   _ir("ok")),
     JBLButtonSpec("nav_back",  "Back",  "mdi:keyboard-backspace", _ir("back")),
     JBLButtonSpec("nav_menu",  "Menu",  "mdi:menu",             _ir("menu")),
-    JBLButtonSpec("nav_dim",   "Dim",   "mdi:brightness-6",     _ir("dim")),
 )
 
 ADMIN_SPECS: tuple[JBLButtonSpec, ...] = (
